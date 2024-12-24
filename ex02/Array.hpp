@@ -1,4 +1,5 @@
-#pragma once
+#ifndef	ARRAY_H
+# define ARRAY_H
 
 
 # include <exception>
@@ -6,11 +7,7 @@
 # include <stdlib.h>
 # include <time.h>
 
-// # define MAX_VAL	750
-
-template<class T>
-
-
+template<typename T>
 class Array
 {
 	private:
@@ -23,6 +20,7 @@ class Array
 		Array(Array const & r);
 		~Array();
 		Array &operator=(Array const& r);
+		T	operator[](unsigned int i) const;
 		T	&operator[](unsigned int i);
 
 		unsigned int size(void) const {
@@ -38,3 +36,4 @@ class Array
 
 };
 
+#endif

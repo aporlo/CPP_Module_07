@@ -1,6 +1,7 @@
 NAME = array
 CXX = c++
 CPPFLAGS = -std=c++98 -Wall -Wextra -Werror
+CPPFLAGS += -pedantic -g3
 
 BUILD_DIR = build
 
