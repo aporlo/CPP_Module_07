@@ -3,8 +3,7 @@
 # include "Array.hpp"
 
 template<typename T>
-Array<T>::Array(void) {}
-
+Array<T>::Array(void):_array(new T()), _n(0) {}
 
 template<typename T>
 Array<T>::Array(unsigned int n): _array(new T[n]), _n(n) {}

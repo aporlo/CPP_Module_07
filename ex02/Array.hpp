@@ -19,7 +19,7 @@ class Array
 		Array(unsigned int n);
 		Array(Array const & r);
 		~Array();
-		Array &operator=(Array const& r);
+		Array &operator=(Array const& src);
 		T	operator[](unsigned int i) const;
 		T	&operator[](unsigned int i);
 
